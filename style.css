@@ -2,3 +2,191 @@ body {
     font-family: arial, sans-serif;
     background-color: white;
 }
+
+.nav-flexbox {
+    display: flex;
+    flex-direction: space-between;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+.nav-flexbox a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.child-left {
+    flex-grow: 1;
+
+    display: flex;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+.child-right {
+    flex-grow: 1;
+    padding-right: 15px;
+
+    /* border: 2px solid blue; */
+
+}
+
+.navbar-left{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.navbar-right{
+    /* for no list dot use below list style type */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.nav-flexbox li {
+    display: inline-block;
+
+    padding: 5px;
+    margin: 0 5px;
+
+    color: #222222;
+    font-size: 14px;
+}
+
+.nav-flexbox li:hover {
+    text-decoration: underline;
+}
+
+.grid-box {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 2fr 1fr 1fr 1fr;
+
+    gap: 20px;
+    margin: auto;
+    margin-top: 150px;
+    width: 700px;
+}
+
+.gridrow-1 {
+    grid-column:  1 / 5;
+    grid-row: 1;
+}
+
+.grid-search-icon {
+    grid-column: 1;
+    grid-row: 2;
+    z-index: 2;
+}
+
+.gridrow-2 {
+    grid-column: 1 / 5;
+    grid-row: 2;
+}
+
+.gridrow-3-first-btn {
+    grid-column: 2 / 3;
+    grid-row: 3;
+
+}
+
+.gridrow-3-second-btn {
+    grid-column: 3 /4;
+    grid-row: 3;
+    
+}
+
+.gridrow-4 {
+    grid-column: 2 / 4;
+    grid-row: 4;
+}
+
+.googleLogo {
+    width: 300px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.search-icon {
+    display: block;
+    margin-left: 20px;
+    margin-top: 10px;
+    z-index: 1;
+
+}
+
+.search-bar {
+    width: 80%;
+    height: 2.5rem;
+    padding: 0.25rem 4rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-bar:hover {
+    filter: drop-shadow(4px 4px 5px lightgray);
+}
+.first-btn {
+    width: 150px;
+    height: 40px;
+    background: #f8f9fa;
+
+    border-radius: 2px;
+    /* for no border around the button use none on border - style  ; */
+    border-style: none;
+    cursor: pointer;
+
+}
+
+.second-btn {
+     width: 150px;
+    height: 40px;
+    background: #f8f9fa;
+
+    border-radius: 2px;
+    /* for no border around the button use none on border - style  ; */
+    border-style: none;
+    cursor: pointer;
+
+    display: block;
+    margin-left: 20px;
+
+}
+
+.first-btn:hover {
+    border: 2px solid darkgrey;
+}
+
+.first-btn:visisted {
+    border: 2px solid #4285f4;
+}
+
+.second-btn:visited {
+    border: 2px solid #4285f4;
+}
+
+.second-btn:hover {
+    border: 2px solid darkgrey;
+}
+
+.gridrow-4 {
+    text-align: center;
+}
+
+.gridrow-4 a {
+    text-decoration: none;
+}
+
+.gridrow-4 a:hover {
+    text-decoration: underline;
+}
